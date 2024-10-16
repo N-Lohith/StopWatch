@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #7F7FD5 0%, #86A8E7 50%, #91EAE4 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px 30px;
+    border-radius: 50%; /* Rounded container */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Adjust size as needed */
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px; /* Adjust to center content */
+}
+
+.circular-heading {
+    background-color: #333;
+    color: #fff;
+    width: 200px; /* Size of circular heading */
+    height: 200px; /* Size of circular heading */
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.circular-heading h1 {
+    font-size: 1.5em; /* Adjust font size */
+}
+
+.circular-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.oval-button {
+    width: 80px; /* Button width */
+    height: 40px; /* Button height */
+    border-radius: 25px; /* Half of height for oval shape */
+    font-size: 0.8em;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#start {
+    background-color: #28a745;
+}
+
+#pause {
+    background-color: #dc3545;
+}
+
+#reset {
+    background-color: #007bff;
+}
+
+#lap {
+    background-color: #ffc107;
+}
+
+.oval-button:hover {
+    opacity: 0.85;
+}
+
+#laps {
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+#laps div {
+    margin-bottom: 8px;
+    padding: 7px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
